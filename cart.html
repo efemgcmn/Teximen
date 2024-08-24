@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet - Teximen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Teximen</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="products.html">Ürünler</a></li>
+                <li><a href="about.html">Hakkında</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+                <li><a href="cart.html">Sepet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart">
+            <h2>Sepetiniz</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Ürün</th>
+                        <th>Adet</th>
+                        <th>Fiyat</th>
+                        <th>Toplam</th>
+                        <th>Sil</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Dinamik olarak ürünler burada listelenecek -->
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <p><strong>Toplam Tutar:</strong> <span id="total-price">₺0.00</span></p>
+                <a href="checkout.html" class="btn checkout-btn">Ödeme Sayfasına Git</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Ticaret Sitesi. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
